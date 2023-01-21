@@ -22,7 +22,7 @@ function handleServer(req, res) {
     //     "email": "guestcaredominos@jublfood.com"}`);
     // }
     if(req.url==="./contact"){
-        //res.setHeader("Content-type","application/json");
+        res.setHeader("Content-type","application/json");
         res.writeHead(200);
         res.end(`{
             "Phone":"18602100000",
@@ -32,7 +32,7 @@ function handleServer(req, res) {
     else{
         res.statuscode(404);
         res.end();
-        
+
     }
   
 }
